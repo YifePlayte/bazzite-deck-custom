@@ -13,7 +13,8 @@ cp -avf "/ctx/system_files"/. /
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/43/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf5 install -y tmux
+# dnf5 install -y tmux
+dnf5 install -y /ctx/inputplumber.rpm
 
 # Use a COPR Example:
 #
@@ -24,4 +25,4 @@ dnf5 install -y tmux
 
 #### Example for enabling a System Unit File
 
-systemctl enable podman.socket
+# systemctl enable podman.socket
